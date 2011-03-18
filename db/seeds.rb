@@ -5,3 +5,27 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+[
+  "Universidade Federal do Ceará - UFC",
+  "Universidade Estadual do Ceará - UECE",
+  "Instituto Federal de Educação Tecnológica - IFET",
+  "Universidade de Fortaleza - UNIFOR",
+  "Faculdade Integrada do Ceará - FIC",
+  "Faculdade Christus - FC",
+  "Faculdade Farias Brito - FFB",
+  "Faculdade Lourenço Filho - FLF",
+  "Faculdade Cearense - FAC",
+  "Faculdade Nordeste - FANOR"
+].each do |f|
+  Faculdade.create!(:nome => f)
+end
+
+[
+  "Solteiro(a)",
+  "Casado(a)",
+  "Viúvo(a)",
+  "Divorciado(a)",
+  "Separado(a) Judicialmente"
+].each do |r|
+  Relacionamento.create!(:nome => r)
+end

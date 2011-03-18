@@ -1,0 +1,2 @@
+module FaculdadesHelper
+end

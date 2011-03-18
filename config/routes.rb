@@ -1,4 +1,12 @@
 Concursos::Application.routes.draw do
+  resources :arquivos
+
+  resources :faculdades
+
+  resources :relacionamentos
+  
+  root :to => "faculdades#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

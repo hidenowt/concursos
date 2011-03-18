@@ -1,0 +1,23 @@
+<h1>Listing faculdades</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @faculdades.each do |faculdade| %>
+  <tr>
+    <td><%= faculdade.nome %></td>
+    <td><%= link_to 'Show', faculdade %></td>
+    <td><%= link_to 'Edit', edit_faculdade_path(faculdade) %></td>
+    <td><%= link_to 'Destroy', faculdade, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Faculdade', new_faculdade_path %>

@@ -14,7 +14,7 @@ Linha de comando:
 	$ rails generate jquery:install
 
 ## Instalar o MongoID
-[MongoID](http://mongoid.org/docs/installation/)
+[MongoID](http://mongoid.org/docs/installation/), Tutorial usando o MongoID no [RailsCast](http://railscasts.com/episodes/238-mongoid) e no [ASCIIcasts](http://pt.asciicasts.com/episodes/238-mongoid)
 
 GemFile:
 	# Gemfile
@@ -106,3 +106,12 @@ Criar um arquivo chamado .rspec na pasta raiz do projeto, com o seguinte conteú
 	--colour
 	--drb
 	--format documentation 
+
+Caso queira deixar já o layout já com uma formatação legal basta incluir a gem [Nifty Generators](https://github.com/ryanb/nifty-generators)
+GemFile:
+	# Gemfile
+	gem "nifty-generators"
+
+Linha de comando:
+	$ bundle install
+	$ rails g nifty:scaffold Recipe name:string index new

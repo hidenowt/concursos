@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @arquivo.descricao %>
+</p>
+
+<p>
+  <b>Data adicionada:</b>
+  <%= @arquivo.data_adicionada %>
+</p>
+
+<p>
+  <b>Concursos:</b>
+  <%= @arquivo.concursos %>
+</p>
+
+<p>
+  <b>Documento:</b>
+  <%= link_to 'pdf', @arquivo.documento.url %>
+</p>
+
+<%= link_to 'Edit', edit_arquivo_path(@arquivo) %> |
+<%= link_to 'Back', arquivos_path %>

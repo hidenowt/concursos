@@ -1,0 +1,33 @@
+<%= form_for @arquivo, :html => { :multipart => true } do |f| %>
+  <% if @arquivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@arquivo.errors.count, "error") %> prohibited this arquivo from being saved:</h2>
+
+      <ul>
+      <% @arquivo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :concursos %><br />
+    <%= f.text_field :concursos %>
+  </div>
+  <div class="field">
+    <%= f.label :data_adicionada %><br />
+    <%= f.date_select :data_adicionada %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao, :limit => 200 %>
+  </div>
+  <div class="field">
+    <%= f.label :documento %><br />
+    <%= f.file_field :documento %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
