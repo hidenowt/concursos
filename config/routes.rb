@@ -1,6 +1,10 @@
 Concursos::Application.routes.draw do
-  resources :arquivos
+  resources :noticias
 
+  resources :concursos do
+    resources :arquivos
+  end
+  
   resources :faculdades
 
   resources :relacionamentos

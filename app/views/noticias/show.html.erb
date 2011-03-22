@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @noticia.titulo %>
+</p>
+
+<p>
+  <b>Corpo:</b>
+  <%= @noticia.corpo %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @noticia.data %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @noticia.usuario %>
+</p>
+
+<p>
+  <b>Concurso:</b>
+  <%= @noticia.concurso %>
+</p>
+
+
+<%= link_to 'Edit', edit_noticia_path(@noticia) %> |
+<%= link_to 'Back', noticias_path %>

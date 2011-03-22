@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @concurso.titulo %>
+</p>
+
+<p>
+  <b>Inicio inscricoes:</b>
+  <%= @concurso.inicio_inscricoes %>
+</p>
+
+<p>
+  <b>Fim inscricoes:</b>
+  <%= @concurso.fim_inscricoes %>
+</p>
+
+<p>
+  <b>Data prova:</b>
+  <%= @concurso.data_prova %>
+</p>
+
+<p>
+  <b>Data resultado:</b>
+  <%= @concurso.data_resultado %>
+</p>
+
+
+<%= link_to 'Edit', edit_concurso_path(@concurso) %> |
+<%= link_to 'Back', concursos_path %>
