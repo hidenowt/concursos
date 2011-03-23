@@ -1,0 +1,97 @@
+<%= form_for(@candidato) do |f| %>
+  <% if @candidato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@candidato.errors.count, "error") %> prohibited this candidato from being saved:</h2>
+
+      <ul>
+      <% @candidato.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :data_nascimento %><br />
+    <%= f.date_select :data_nascimento %>
+  </div>
+  <div class="field">
+    <%= f.label :nacionalidade %><br />
+    <%= f.text_field :nacionalidade %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br />
+    <%= f.text_field :sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :estado_civil %><br />
+    <%= f.text_field :estado_civil %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :complemento %><br />
+    <%= f.text_field :complemento %>
+  </div>
+  <div class="field">
+    <%= f.label :bairro %><br />
+    <%= f.text_field :bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br />
+    <%= f.text_field :celular %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :semestre %><br />
+    <%= f.text_field :semestre %>
+  </div>
+  <div class="field">
+    <%= f.label :faculdade %><br />
+    <%= f.text_field :faculdade %>
+  </div>
+  <div class="field">
+    <%= f.label :pago %><br />
+    <%= f.check_box :pago %>
+  </div>
+  <div class="field">
+    <%= f.label :deferido %><br />
+    <%= f.check_box :deferido %>
+  </div>
+  <div class="field">
+    <%= f.label :aprovado %><br />
+    <%= f.check_box :aprovado %>
+  </div>
+  <div class="field">
+    <%= f.label :data_inscricao %><br />
+    <%= f.datetime_select :data_inscricao %>
+  </div>
+  <div class="field">
+    <%= f.label :data_pagamento %><br />
+    <%= f.datetime_select :data_pagamento %>
+  </div>
+  <div class="field">
+    <%= f.label :concurso %><br />
+    <%= f.text_field :concurso %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

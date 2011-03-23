@@ -1,4 +1,6 @@
 Concursos::Application.routes.draw do
+  resources :candidatos
+
   resources :noticias
 
   resources :concursos do

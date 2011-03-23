@@ -6,6 +6,6 @@ class Relacionamento
   field :nome, :type => String
   
   # Validacoes
-  validates :nome, :presence => { :limit => 150 },
+  validates :nome, :presence   => { :limit => 150 },
                    :uniqueness => true
 end

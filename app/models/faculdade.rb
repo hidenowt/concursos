@@ -6,6 +6,6 @@ class Faculdade
   field :nome, :type => String
   
   # Validacoes
-  validates :nome, :presence => { :limit => 200 },
+  validates :nome, :presence   => { :limit => 200 },
                    :uniqueness => true
 end

@@ -1,0 +1,61 @@
+<h1>Listing candidatos</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Data nascimento</th>
+    <th>Nacionalidade</th>
+    <th>Sexo</th>
+    <th>Estado civil</th>
+    <th>Cpf</th>
+    <th>Endereco</th>
+    <th>Complemento</th>
+    <th>Bairro</th>
+    <th>Telefone</th>
+    <th>Celular</th>
+    <th>Email</th>
+    <th>Semestre</th>
+    <th>Faculdade</th>
+    <th>Pago</th>
+    <th>Deferido</th>
+    <th>Aprovado</th>
+    <th>Data inscricao</th>
+    <th>Data pagamento</th>
+    <th>Concurso</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @candidatos.each do |candidato| %>
+  <tr>
+    <td><%= candidato.nome %></td>
+    <td><%= candidato.data_nascimento %></td>
+    <td><%= candidato.nacionalidade %></td>
+    <td><%= candidato.sexo %></td>
+    <td><%= candidato.estado_civil %></td>
+    <td><%= candidato.cpf %></td>
+    <td><%= candidato.endereco %></td>
+    <td><%= candidato.complemento %></td>
+    <td><%= candidato.bairro %></td>
+    <td><%= candidato.telefone %></td>
+    <td><%= candidato.celular %></td>
+    <td><%= candidato.email %></td>
+    <td><%= candidato.semestre %></td>
+    <td><%= candidato.faculdade %></td>
+    <td><%= candidato.pago %></td>
+    <td><%= candidato.deferido %></td>
+    <td><%= candidato.aprovado %></td>
+    <td><%= candidato.data_inscricao %></td>
+    <td><%= candidato.data_pagamento %></td>
+    <td><%= candidato.concurso %></td>
+    <td><%= link_to 'Show', candidato %></td>
+    <td><%= link_to 'Edit', edit_candidato_path(candidato) %></td>
+    <td><%= link_to 'Destroy', candidato, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Candidato', new_candidato_path %>
