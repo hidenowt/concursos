@@ -8,7 +8,7 @@
 [
   "Universidade Federal do Ceará - UFC",
   "Universidade Estadual do Ceará - UECE",
-  "Instituto Federal de Educação Tecnológica - IFET",
+  "Instituto Federal de Educação, Ciência e Tecnológia do Ceará - IFCE",
   "Universidade de Fortaleza - UNIFOR",
   "Faculdade Integrada do Ceará - FIC",
   "Faculdade Christus - FC",
